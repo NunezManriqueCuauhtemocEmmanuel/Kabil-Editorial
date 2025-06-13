@@ -1,0 +1,80 @@
+.frase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.frase h3{
+    color: #afafaf;
+    font-size: 40px;
+    font-family: "Glory", sans-serif;
+    font-weight: 300;
+}
+
+.primero{
+    color: #000000;
+}
+.segundo{
+    color: #3d4794;
+}
+
+.frase p{
+    font-family: "Glory", sans-serif;
+    width: 60%;
+    text-align: center;
+}
+
+.creamate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.creamate h1{
+    animation: tada;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Glory", sans-serif;
+}
+.creamate h1 span{
+    color: #054593;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+    background: #054593;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.contain p{
+    color: #ffffff;
+    width: 80%;
+    text-align: justify;
+    font-family: "Glory", sans-serif;
+}
+
+.contain p span{
+    color: #79b8df;
+    font-weight: 600;
+}
+
+@media (max-width: 700px){
+    .contain{
+        width: 95%;
+    }
+}

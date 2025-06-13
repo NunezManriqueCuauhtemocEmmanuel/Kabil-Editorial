@@ -1,0 +1,201 @@
+.libros{
+    font-family: 'Glory', sans-serif;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.libros h1{
+    margin-top: 50px;
+    padding: 0;
+}
+
+.libros p{
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer{
+    width: 70%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contenedorC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: 0.5s;
+    width: 400px;
+    filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.35));
+}
+
+
+.contenedorC:hover{
+    scale: 1.1;
+}
+
+.thecard{
+    position: relative;
+    width:250px;
+    height: 300px;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+.thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #000;
+}
+
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.clase1{
+    background: url(../img/Creamate_P1_Portada_page-0001.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clase1b{
+    background: url(../img/Creamate_P1_Portada_page-0002.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase2{
+    background: url(../img/image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase2b{
+    background: url(../img/portadaas/back2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clase3{
+    background: url(../img/portadaas/front3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase3b{
+    background: url(../img/portadaas/back3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase4{
+    background: url(../img/portadaas/front4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase4b{
+    background: url(../img/portadaas/back4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase5{
+    background: url(../img/portadaas/front5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase5b{
+    background: url(../img/portadaas/back5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase6{
+    background: url(../img/portadaas/front6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clase6b{
+    background: url(../img/portadaas/back6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenedorC button{
+    width: 150px;
+    background-color: #738dcc;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 20px;
+    border: none;
+}
+
+.botones{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button:hover{
+    background: white;
+    color: #738dcc;
+    transform: scale(1.1);
+} 
+

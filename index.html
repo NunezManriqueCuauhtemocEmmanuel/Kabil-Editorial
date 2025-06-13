@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/ico/Kabil1.ico" type="image/x-icon">
+    <script defer src="./scripts/script.js"></script>
+    <script defer src="./scripts/navbar.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/animaciones.css">
+    <script defer src="./scripts/animaciones.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Kabil</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logoK"><i class="fa-solid fa-bookmark"></i> <span> Kabil</span></a>
+
+        <ul class="navbar">
+            <li><a href="loader.html?next=./index.html" class="active"> Inicio</a></li>
+            <li><a href="#somos"> Somos</a></li>
+            <li><a href="#valor"> Valores</a></li>
+            <li><a href="#myv"> Conocenos</a></li>
+            <li><a href="loader.html?next=./productos.html">Series</a></li>
+        </ul>
+
+        <div class="data">
+            <div class="fecha" id="date-container"></div>
+            <div id="ico-container" class="ico"></div>
+            <div id="time-container" class="time"></div>
+        </div>
+
+        <div class="main">
+            <h3>Bienvenidos</h3>
+            <div class="bx bx-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    
+    <main class="titulo">
+        <div class="logo" >
+            <img src="./img/kabil.png">
+        </div>
+    </main>
+
+    <section class="contenedor" id="somos">
+        <i class="fa-solid fa-users"></i>
+        <h1>¿Quiénes somos?</h1>
+        <p>
+            <span>Somos una empresa </span>dedicada a desarrollar proyectos educativos, ofreciendo opciones que 
+            promuevan el desarrollo de saberes en los estudiantes, además de favorecer la actualización, 
+            capacitación y formación docente en escuelas, instituciones, subsistemas e incluso sistemas 
+            educativos en su totalidad. Para ello, contamos con especialistas reconocidos en las 
+            distintas áreas que se incluyen en los planes y programas de estudio vigentes.
+        </p>
+    </section>
+
+    <section class="valores aparecer" id="valor">
+        <h1>Nuestros valores</h1>
+        <p><span>Nuestros valores son el corazón de todo lo que hacemos</span> cada uno de ellos guía nuestras 
+            decisiones, proyectos y relaciones, reflejando el compromiso profundo que tenemos con 
+            la educación de calidad. Son principios que no solo definen quiénes somos como empresa, 
+            sino que también inspiran a nuestro equipo y fortalecen nuestro vínculo con las comunidades 
+            educativas a las que servimos.
+        </p>
+        <div class="valor">
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Compromiso con la educación</h3>
+                        <p>
+                            Creemos en el poder transformador del conocimiento y trabajamos con pasión
+                            para contribuir a una educación de excelencia, accesible y significativa para todos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Innovación pedagógica y editorial</h3>
+                        <p>
+                            Apostamos por la creatividad y la mejora continua en cada uno de nuestros proyectos,
+                             incorporando metodologías, tecnologías y enfoques que potencien el aprendizaje y la enseñanza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Excelencia y calidad</h3>
+                        <p>
+                            Nos esforzamos por entregar productos y servicios con altos estándares académicos, editoriales y estéticos, que generen valor real para nuestros usuarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-person-half-dress"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Inclusión y equidad</h3>
+                        <p>
+                            Diseñamos propuestas que respetan la diversidad y 
+                            promueven la equidad educativa, reconociendo las múltiples formas de aprender y enseñar.
+                    </div>
+                </div>
+            </div>
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Colaboración y trabajo en equipo</h3>
+                        <p>
+                            Fomentamos un ambiente de cooperación y diálogo entre nuestros equipos, aliados y 
+                            comunidades educativas, convencidos de que el trabajo conjunto enriquece cada resultado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-people-line"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Responsabilidad social</h3>
+                        <p>
+                            Nos mueve el deseo de impactar positivamente en la sociedad, 
+                            a través de proyectos que contribuyan al bienestar y al desarrollo integral de las personas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta" style="--clr:#94e49d;">
+                <div class="caja">
+                    <div class="icono">
+                        <div class="iconbox">
+                            <i class="fa-solid fa-handshake-simple"></i>
+                        </div>
+                    </div>
+                    <div class="contenido">
+                        <h3>Ética y transparencia</h3>
+                        <p>
+                            Actuamos con integridad en todos nuestros procesos, construyendo relaciones basadas en la confianza, el respeto y la honestidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="somos" id="myv">
+        <h1>Nuestra misión y visión reflejan el propósito que nos impulsa...</h1>
+        <div class="vym">
+            <div class="mision hidden">
+                <h3>Misión</h3>
+                <p>
+                    Somos una empresa comprometida con la transformación educativa a través del desarrollo 
+                    de contenidos, proyectos y herramientas innovadoras que promuevan aprendizajes 
+                    significativos. Nos enfocamos en brindar soluciones editoriales y pedagógicas de alta 
+                    calidad que respondan a las necesidades de estudiantes, docentes e instituciones 
+                    educativas, fomentando una educación inclusiva, creativa y con impacto social.
+                </p>
+            </div>
+            <div class="vision hidden">
+                <h3>Visión</h3>
+                <p>
+                    Ser reconocidos como líderes en el ámbito educativo y editorial en Latinoamérica, 
+                    por nuestra capacidad de generar propuestas disruptivas, colaborativas y de 
+                    excelencia, que inspiren el aprendizaje a lo largo de la vida y contribuyan 
+                    activamente al desarrollo de una sociedad más equitativa, crítica y preparada para 
+                    los desafíos del futuro.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="productos">
+        <h1>Conoce nuestras series</h1>
+        <div class="produc hidden">
+            <p>
+                Te presentamos la serie <span>Creamate </span> un complemento ideal de la Nueva 
+                Escuela Mexicana que permite lograr una articulación real y sólida entre
+                los Procesos de Desarrollo de Aprendizaje (PDA) de cada grado con los proyectos del Campo Saberes y 
+                Pensamiento Científico a través de un conjunto de actividades que abonan en el desarrollo
+                de los significados de objetos matemáticos, dando sentido a la actividad matemática de los estudiantes.
+            </p>
+        </div>
+        <div class="guias">
+            <div class="soporte aparecer">
+            </div>
+            <div class="cuadro aparecer">
+                <h4><span>Crea</span>mate</h4>
+                <p>Conoce la serie Creamate al presionar este boton</p>
+                <a href="./productos.html" class="boton-link">
+                    <div class="boton">Visitar</div>
+                </a>
+            </div>
+            <div class="soporte aparecer"></div>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h4>Contactanos</h4>
+        <p>
+            Tienes alguna pregunta sobre nuestros productos, contactanos por este formulario
+        </p>
+        <form class="form-register" action="https://formspree.io/f/xanjoole" method="POST">
+            <input class="controls aparecer" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+            <input class="controls aparecer" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+            <input class="controls aparecer" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+            <textarea class="controls aparecer" name="message" placeholder="Asunto" id="asunto"></textarea>
+            <input class="botons aparecer" id="botons" type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <div class="footer">
+        <div class="pie">
+            <ul class="links">
+                <li><a href="#datos">Inicio</a></li>
+                <li><a href="#func">¿Quiénes somos?</a></li>
+                <li><a href="#guia">Valores</a></li>
+                <li><a href="#crear">Mision y Vision</a></li>
+                <li><a href="#paridad">Productos</a></li>
+                <li><a href="#multi">Contactanos</a></li>
+            </ul>
+            <img src="./img/kabil.png" width="70px">
+            <p>@2025 | Todos los derechos reservados pertenecen a Kabil Ediciones</p>
+        </div>
+    </div>
+</body>
+</html>
