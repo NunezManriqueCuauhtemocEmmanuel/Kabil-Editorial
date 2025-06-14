@@ -9,8 +9,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:28px 12%;
-    transition: all .50s ease;
-    background: #EAECEE;
+    transition: all .25s ease;
 }
 
 .logoK{
@@ -25,7 +24,7 @@ header{
 }
 
 .logoK span{
-    color: #3041c0;
+    color: #0081cc;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -44,14 +43,14 @@ header{
 }
 
 .navbar a:hover{
-    color: #94e49d;
+    color: #00965d;
     text-decoration: underline;
     text-decoration-line: 2px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .navbar a.active{
-    color: #94a4e4;
+    color: #00965d;
 }
 
 .data{
@@ -83,6 +82,11 @@ header{
     cursor: pointer;
     z-index: 1001;
     display: none;
+}
+
+header.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 1350px){
