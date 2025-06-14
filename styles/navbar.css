@@ -43,7 +43,7 @@ header{
 }
 
 .navbar a:hover{
-    color: #00965d;
+    color: #e20428;
     text-decoration: underline;
     text-decoration-line: 2px;
     font-size: 1.2rem;
@@ -51,6 +51,10 @@ header{
 
 .navbar a.active{
     color: #00965d;
+}
+
+.navbar a.active:hover{
+    color: #e20428;
 }
 
 .data{
@@ -85,8 +89,7 @@ header{
 }
 
 header.scrolled {
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #EAECEE;
 }
 
 @media (max-width: 1350px){

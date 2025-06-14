@@ -22,7 +22,7 @@ const main = document.querySelector('main');
         const scrollY = window.scrollY;
 
         // Calcular 70% de la posición del main
-        const triggerPoint = mainTop + mainHeight * 0.25;
+        const triggerPoint = mainTop + mainHeight * 0.27;
 
         if (scrollY >= triggerPoint) {
             header.classList.add('scrolled');
