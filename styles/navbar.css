@@ -8,33 +8,35 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:28px 12%;
+    padding:23px 10%;
     transition: all .25s ease;
 }
 
 .logoK{
     display: flex;
     align-items: center;
+    transition: all 0.5s;
 }
 
-.logoK i{
-    color: #334abe;
-    font-size: 28px;
-    margin-right: 3px;
+.logoK img{
+    height: 48px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
 }
 
-.logoK span{
-    color: #0081cc;
-    font-size: 1.1rem;
-    font-weight: 600;
+.logoK.show img {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .navbar{
     display: flex;
+    transition: all 0.5s;
 }
 
 .navbar a{
-    color: #3a3d5b;
+    color: #1f1f28;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 5px;
@@ -46,7 +48,7 @@ header{
     color: #e20428;
     text-decoration: underline;
     text-decoration-line: 2px;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 .navbar a.active{

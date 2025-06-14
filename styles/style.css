@@ -12,16 +12,16 @@ body{
 
 }
 
-.titulo {
-    background: url(../img/fondos/trianglify-lowres.png);
+/* .titulo {
+    background: url(../img/fondos/fondo1.png);
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-size: cover;
-}  
+    background-size: 100% 100%;
+} */ 
 .logo {
     display: flex;
     align-items: center;
@@ -40,6 +40,59 @@ body{
 .titulo .logo img:hover{
     transform: scale(1.1);
     filter: drop-shadow(-3px 3px 9px rgba(255, 255, 255, 0.9));
+} 
+
+.titulo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+.fondo1 {
+  background-image: url('../img/fondos/fondo1.png');
+}
+
+.fondo2 {
+  background-image: url('../img/fondos/fondo2.png');
+}
+
+.fondo3 {
+  background-image: url('../img/fondos/fondo3.png');
+}
+
+.fondo4 {
+  background-image: url('../img/fondos/fondo4.png');
+}
+
+.fondo5 {
+  background-image: url('../img/fondos/fondo5.png');
+}
+
+.fondo6 {
+  background-image: url('../img/fondos/fondo6.png');
+}
+
+
+.visible {
+  opacity: 1;
+  z-index: 0;
 }
 
 .bienvenida{
@@ -603,5 +656,17 @@ body{
     }
     .valor{
         margin: 10px;
+    }
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
     }
 }

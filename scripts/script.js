@@ -30,3 +30,36 @@ const main = document.querySelector('main');
             header.classList.remove('scrolled');
         }
     });
+
+    const logoK = document.querySelector('.logoK');
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const triggerPoint = main.offsetHeight * 0.54;
+
+        if (scrollY > triggerPoint) {
+            logoK.classList.add('show');
+        } else {
+            logoK.classList.remove('show');
+        }
+    });
+
+    const fondos = document.querySelectorAll('.fondo'); // Selecciona todos los divs con clase "fondo"
+  let current = 0;
+
+  // Muestra el primero
+  fondos[current].classList.add('visible');
+
+  setInterval(() => {
+    // Oculta el fondo actual
+    fondos[current].classList.remove('visible');
+
+    // Calcula el siguiente (circular)
+    current = (current + 1) % fondos.length;
+
+    // Muestra el nuevo fondo
+    fondos[current].classList.add('visible');
+  }, 5000); // cada 5 segundos
+
+
+    
