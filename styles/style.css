@@ -630,6 +630,9 @@ body{
     .mision, .vision{
         width: 80%;
     }
+    .contenedor p{
+        width: 80%;
+    }
 }
 
 @media(max-width: 800px) {
