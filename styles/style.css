@@ -12,36 +12,6 @@ body{
 
 }
 
-/* .titulo {
-    background: url(../img/fondos/fondo1.png);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-size: 100% 100%;
-} */ 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-    width: 70%;
-}
-  
-.logo img {
-    width: 40%;
-    filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.35));
-    transition: all 0.5s;
-    z-index: 1;
-}
-
-.titulo .logo img:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(-3px 3px 9px rgba(255, 255, 255, 0.9));
-} 
-
 .titulo {
   position: relative;
   width: 100%;
@@ -89,6 +59,38 @@ body{
   background-image: url('../img/fondos/fondo6.png');
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 70%;
+    gap: 30px;
+}
+
+.logo h3{
+    z-index: 1;
+    font-size: 40px;
+}
+  
+.logo img {
+    width: 40%;
+    filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.35));
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.titulo .logo img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(-3px 3px 9px rgba(255, 255, 255, 0.9));
+}
+
+.logo p{
+    width: 70%;
+    text-align: center;
+    z-index: 1;
+}
 
 .visible {
   opacity: 1;
@@ -579,7 +581,7 @@ body{
         width: 250px;
     }
     .titulo{
-        height: 50vh;
+        height: 60vh;
     }
 }
 

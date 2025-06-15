@@ -22,7 +22,7 @@ const main = document.querySelector('main');
         const scrollY = window.scrollY;
 
         // Calcular 70% de la posición del main
-        const triggerPoint = mainTop + mainHeight * 0.27;
+        const triggerPoint = mainTop + mainHeight * 0.20;
 
         if (scrollY >= triggerPoint) {
             header.classList.add('scrolled');
@@ -35,7 +35,7 @@ const main = document.querySelector('main');
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        const triggerPoint = main.offsetHeight * 0.54;
+        const triggerPoint = main.offsetHeight * 0.44;
 
         if (scrollY > triggerPoint) {
             logoK.classList.add('show');
