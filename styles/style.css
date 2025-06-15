@@ -551,6 +551,7 @@ body{
     flex-wrap: wrap;
     gap: 30px;
     background: #171d2a;
+    padding: 30px;
 }
 
 .form-register{
@@ -560,6 +561,8 @@ body{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .form-register #nombres, #apellidos, #correo, #asunto{
@@ -593,7 +596,6 @@ body{
 
 #asunto{
     height: 150px;
-    border: 5px solid #0081cc;
 }
 
 #botons{
