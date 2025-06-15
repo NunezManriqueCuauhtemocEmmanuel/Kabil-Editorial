@@ -420,6 +420,10 @@ body{
 
 .productos img{
     width: 25%;
+    animation: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(-3px 3px 15px rgba(16, 38, 55, 0.631));
 }
 
 .productos .datos .textos p{
@@ -530,23 +534,27 @@ body{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px;
     margin-top: 40px;
     margin-bottom: 100px;
 }
 
-.formulario h4{
+.formulario h1{
     font-size: 40px;
-    font-weight: 400;
 }
 
-.formulario p{
-    width: 80%;
-    text-align: center;
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #171d2a;
 }
 
 .form-register{
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -555,7 +563,7 @@ body{
 }
 
 .form-register #nombres, #apellidos, #correo, #asunto{
-    width: 50%;
+    width: 80%;
     border: none;
     height: 30px;
     text-align: center;
@@ -563,7 +571,7 @@ body{
 }
 
 #nombres, #correo{
-    background: #0081cc;
+    background: #ffffff;
     color: #ffffff;
     transition: 0.5s;
     font-family: 'Glory', serif;
@@ -577,7 +585,7 @@ body{
 }
 
 #apellidos{
-    background: #0081cc;
+    background: #ffffff;
     color: #ffffff;
     transition: 0.5s;
     font-family: 'Glory', serif;
