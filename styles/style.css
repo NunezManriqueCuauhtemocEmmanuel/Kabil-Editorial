@@ -70,12 +70,16 @@ body{
 }
 
 .logo h3{
+    width: 70%;
     z-index: 1;
     font-size: 40px;
+    color: #171d2a;
+    text-align: center;
 }
   
 .logo img {
     width: 40%;
+    min-width: 300px;;
     filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.35));
     transition: all 0.5s;
     z-index: 1;
@@ -83,13 +87,20 @@ body{
 
 .titulo .logo img:hover{
     transform: scale(1.1);
-    filter: drop-shadow(-3px 3px 9px rgba(255, 255, 255, 0.9));
 }
 
 .logo p{
     width: 70%;
     text-align: center;
     z-index: 1;
+    font-size: 20px;
+    font-family: 'Glory', sans-serif;
+    font-weight: 500;
+}
+
+.primero, .segundo {
+    color: #6a51a4;
+    transition: 1s ease-in-out;
 }
 
 .visible {
@@ -568,7 +579,7 @@ body{
     .mision, .vision{
         width: 80%;
     }
-    .contenedor p, .valores p{
+    .contenedor p, .valores p, .logo h3, .logo p{
         width: 80%;
     }
 }
@@ -577,17 +588,28 @@ body{
     .contenedor p, .valores p{
         text-align: justify;
     }
-    .logo img{
-        width: 250px;
-    }
     .titulo{
-        height: 60vh;
+        height: 90vh;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 550px){
+    .logo h3{
+        font-size: 24px;
+        width: 90%;
+    }
+    .logo p{
+        width: 90%;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo{
+        width: 90%;
+    }
     .logo img{
-        width: 200px;
+        width: 250px;
     }
     .mision, .vision{
         width: 80%;

@@ -44,22 +44,26 @@ const main = document.querySelector('main');
         }
     });
 
-    const fondos = document.querySelectorAll('.fondo'); // Selecciona todos los divs con clase "fondo"
+    const fondos = document.querySelectorAll('.fondo');
   let current = 0;
-
-  // Muestra el primero
   fondos[current].classList.add('visible');
+  setInterval(() => {
+    fondos[current].classList.remove('visible');
+    current = (current + 1) % fondos.length;
+    fondos[current].classList.add('visible');
+  }, 5000);
+
+  const colores = ['#00a88a', '#00aeed', '#f26235', '#d0177d', '#a2ce52', '#6a51a4'];
+  const spansPrimero = document.querySelectorAll('.primero');
+  const spansSegundo = document.querySelectorAll('.segundo');
+  let i = 0;
 
   setInterval(() => {
-    // Oculta el fondo actual
-    fondos[current].classList.remove('visible');
-
-    // Calcula el siguiente (circular)
-    current = (current + 1) % fondos.length;
-
-    // Muestra el nuevo fondo
-    fondos[current].classList.add('visible');
-  }, 5000); // cada 5 segundos
+    const color = colores[i % colores.length];
+    spansPrimero.forEach(span => span.style.color = color);
+    spansSegundo.forEach(span => span.style.color = color);
+    i++;
+  }, 5000);
 
 
     
