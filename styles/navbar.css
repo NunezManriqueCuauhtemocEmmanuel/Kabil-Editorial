@@ -137,12 +137,14 @@ header.scrolled {
         right: -300%;
         width: 270px;
         height: 30vh;
-        background: #cd3f3f;
+        background: #EAECEE;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         border-radius: 10px;
         transition: all .50s ease;
+        backdrop-filter: blur(10px);
+        box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.252);
     }
 
     .navbar a{
@@ -150,10 +152,6 @@ header.scrolled {
         margin: 12px 0;
         padding: 0px 25px;
         transition: all .50s ease;
-        color: white;
-    }
-    .navbar a:hover{
-        color: #9db9f7;
     }
 
     .navbar.open{
