@@ -12,58 +12,45 @@
       height: 100vh;
     }
 
-    .book {
-      position: relative;
-      width: 200px;
-      height: 140px;
-      perspective: 1000px;
-    }
+    .card {
+  width: 250px;
+  background-color: #7c4dff; /* morado */
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+  font-family: sans-serif;
+}
 
-    .cover, .page {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      top: 0;
-      left: 0;
-      background: #1e90ff;
-      transform-origin: left;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
+.card::before {
+  content: "02";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #7c4dff;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
 
-    .cover {
-      background: #003366;
-      z-index: 10;
-    }
-
-    .page {
-      background: white;
-      animation: flip 2s infinite ease-in-out;
-    }
-
-    @keyframes flip {
-      0%   { transform: rotateY(0deg); z-index: 1; }
-      49%  { z-index: 1; }
-      50%  { z-index: 0; }
-      100% { transform: rotateY(-180deg); z-index: 0; }
-    }
-
-    .spine {
-      position: absolute;
-      left: -10px;
-      top: 0;
-      width: 10px;
-      height: 100%;
-      background: #333;
-      border-radius: 3px 0 0 3px;
-    }
   </style>
 </head>
 <body>
-  <div class="book">
-    <div class="spine"></div>
-    <div class="cover"></div>
-    <div class="page"></div>
+  <div class="card">
+  <div class="content">
+    <h3>Safe & Supportive<br>Learning</h3>
+    <p>We prioritize safety and well-being, providing a secure online space where children can explore, learn, and grow.</p>
   </div>
+</div>
+
 </body>
 </html>

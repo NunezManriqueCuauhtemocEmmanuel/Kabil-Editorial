@@ -184,7 +184,7 @@ body{
 }
 
 .valores p span{
-    color: #e1edbc;
+    color: #88e66e;
     font-weight: 700;
 }
 
@@ -249,7 +249,8 @@ body{
 
 .carta:hover .caja .icono{
     width: 100%;
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .carta .caja .icono .caja2{
@@ -414,7 +415,7 @@ body{
 
 .productos .datos .textos h3{
     font-size: 24px;
-    color: #0066a6;
+    color: #f23333;
     font-family: 'Glory', sans-serif;
 }
 
@@ -510,7 +511,7 @@ body{
 
 .boton {
   width: 150px;
-  background-color: #738dcc;
+  background-color: #f23333;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -521,7 +522,7 @@ body{
 
 .boton:hover {
     background: white;
-    color: #738dcc;
+    color: #f23333;
     transform: scale(1.1);
 }
 
@@ -536,55 +537,72 @@ body{
     flex-wrap: wrap;
     margin-top: 40px;
     margin-bottom: 100px;
+    gap: 20px;
 }
 
 .formulario h1{
     font-size: 40px;
+    width: 500px;
+}
+
+.formulario p{
+    font-size: 20px;
+    text-align: justify;
+    width: 500px;
+}
+
+.formulario h3{
+    width: 500px;
+    font-size: 22px;
 }
 
 .form{
-    width: 50%;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
-    background: #171d2a;
-    padding: 30px;
+    background: #f23333;
+    border-radius: 20px;
 }
 
 .form-register{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .form-register #nombres, #apellidos, #correo, #asunto{
-    width: 80%;
+    width: 90%;
     border: none;
     height: 30px;
     text-align: center;
     border-radius: 10px;
+    padding: 20px;
+    font-weight: 500;
+    font-family: 'Glory', sans-serif;
+    font-size: 1.2rem;
 }
 
 #nombres, #correo{
     background: #ffffff;
-    color: #ffffff;
+    color: #151c22;
     transition: 0.5s;
     font-family: 'Glory', serif;
 }
 #nombres::placeholder, #correo::placeholder, #apellidos::placeholder{
-    color: #ffffff;
-}
-#nombres:hover, #correo:hover, #apellidos:hover{
-    background: #107dc1;
-    scale: 1.1;
+    color: #23292f;
+    font-weight: 500;
+    font-family: 'Glory', sans-serif;
+    font-size: 1.2rem;
 }
 
 #apellidos{
@@ -600,15 +618,26 @@ body{
 
 #botons{
     border: none;
-    background: #0081cc;
+    background: #fba497;
     width: 30%;
+    font-weight: 600;
+    font-size: 1.2rem;
     padding: 10px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Glory', sans-serif;
     font-size: 16px;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+#botons:hover{
+    color: #f23333;
+    background: #ffffff;
+    scale: 1.1;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 /*Animaciones*/
@@ -624,21 +653,6 @@ body{
     transition: all 1s;
     filter: blur(0px);
     transform: scale(1);
-}
-
-@media (max-width: 1080px){
-    .form-register #nombres, #apellidos, #correo, #asunto{
-        width: 100%;  
-        border: none;
-        height: 30px;
-        text-align: center;
-        border-radius: 10px;
-    }
-    #asunto{
-        height: 300px;
-        border: 5px solid #0081cc;
-    }
-
 }
 
 @media(max-width: 1000px) {
@@ -665,6 +679,13 @@ body{
     }
     .titulo{
         height: 70vh;
+    }
+}
+
+@media(max-width: 630px) {
+    .form, .formulario h1, .formulario p, .formulario h3{
+        width: 90%;
+        min-width: 230px;
     }
 }
 
