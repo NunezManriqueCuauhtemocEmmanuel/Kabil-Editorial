@@ -124,7 +124,7 @@ header.scrolled {
         justify-content: center;
     }
     .data{
-        width: 120px;
+        display: none;
     }
 }
 
