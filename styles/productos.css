@@ -73,9 +73,10 @@
     font-weight: 600;
 }
 
-@media (max-width: 700px){
-    .contain{
-        width: 95%;
+@media (max-width: 1000px){
+    .contain, .frase p{
+        text-align: justify;
+        width: 90%;
     }
 }
 

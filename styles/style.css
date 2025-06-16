@@ -100,7 +100,7 @@ body{
 }
 
 .logo h1{
-    font-size: 72px;
+    font-size: 64px;
     z-index: 1;
     animation: zoomInUp;
     animation-duration: 2s;
