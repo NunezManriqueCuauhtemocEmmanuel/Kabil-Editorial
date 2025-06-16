@@ -9,7 +9,9 @@
 }
 
 .frase h3{
-    color: #afafaf;
+    width: 80%;
+    text-align: center;
+    color: #202133;
     font-size: 40px;
     font-family: "Glory", sans-serif;
     font-weight: 300;
@@ -19,6 +21,8 @@
     font-family: "Glory", sans-serif;
     width: 60%;
     text-align: center;
+    font-size: 22px;
+    width: 80%;
 }
 
 .creamate{
