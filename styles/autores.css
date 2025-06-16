@@ -137,11 +137,11 @@
 }
 
 .divisorC p{
-    text-align: center;
+    text-align: justify;
 }
 
 .divisorC ul{
-    text-align: center;
+    text-align: justify;
 }
 
 .divisorC li{
@@ -156,8 +156,13 @@
     filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.35));
 }
 
-
-
+@media (max-width: 950px) {
+    .autores p, .divisorC ul{
+        width: 90%;
+        text-align: justify;
+    }
+    
+}
 
 
 
