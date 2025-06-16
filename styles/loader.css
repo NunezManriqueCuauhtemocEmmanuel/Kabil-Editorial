@@ -20,6 +20,7 @@
   animation: tada;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  max-width: 500px;
 }
 
 .cargando h3{

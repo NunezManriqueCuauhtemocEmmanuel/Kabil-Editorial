@@ -73,6 +73,14 @@
     font-weight: 600;
 }
 
+@media (max-width: 950px) {
+    .autores p, .divisorC ul{
+        width: 90%;
+        text-align: justify;
+    }
+    
+}
+
 @media (max-width: 1000px){
     .contain, .frase p{
         text-align: justify;
