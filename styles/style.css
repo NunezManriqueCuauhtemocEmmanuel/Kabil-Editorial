@@ -377,12 +377,12 @@ body{
 
 .cell{
     margin-top: 30px;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 70px;
+    flex-wrap: wrap;
 }
 
 .productos h1{
@@ -391,7 +391,7 @@ body{
 }
 
 .productos .datos{
-    width: 25%;
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -417,14 +417,7 @@ body{
     font-size: 24px;
     color: #f23333;
     font-family: 'Glory', sans-serif;
-}
-
-.productos img{
-    width: 25%;
-    animation: pulse;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    filter: drop-shadow(-3px 3px 15px rgba(16, 38, 55, 0.631));
+    text-align: center;
 }
 
 .productos .datos .textos p{
@@ -698,8 +691,12 @@ body{
         width: 90%;
         text-align: justify;
     }
-    .productos img{
-        width: 300px;
+
+    .cell{
+        width: 100%;
+    }
+    .cell .datos{
+        width: 90%;
     }
 }
 
