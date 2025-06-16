@@ -1,0 +1,48 @@
+.presentacion{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.presentacion h1, p{
+    width: 60%;
+    text-align: center;
+}
+
+.presentacion h1{
+    font-size: 28px;
+}
+
+.presentacion p{
+    font-size: 22px;
+}
+
+.autoresC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.autoresC .ficha{
+    width: 350px;
+    height: 410px;
+    border-radius: 50px;
+}
+
+.gradient{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.ficha:nth-child(1){
+    background: url(../img/fotos/foto.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
