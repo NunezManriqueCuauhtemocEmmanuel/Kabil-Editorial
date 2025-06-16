@@ -74,9 +74,8 @@
 }
 
 @media (max-width: 950px) {
-    .autores p, .divisorC ul{
-        width: 90%;
-        text-align: justify;
+    .contain p{
+        width: 95%;
     }
     
 }
