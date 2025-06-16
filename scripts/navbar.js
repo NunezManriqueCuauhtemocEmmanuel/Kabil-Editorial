@@ -33,7 +33,17 @@ updateDateTime();
 
 let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
+let icon = menu.querySelector('i'); // selecciona el <i> dentro del div
 
 menu.onclick = () => {
     navbar.classList.toggle('open');
-}
+
+    // Cambiar el ícono al abrir/cerrar
+    if (navbar.classList.contains('open')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+    } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+    }
+};
