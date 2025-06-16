@@ -664,6 +664,9 @@ body{
     .soporte{
         display: none;
     }
+    .logo h1{
+        font-size: 48px;
+    }
 }
 
 @media(max-width: 900px) {
