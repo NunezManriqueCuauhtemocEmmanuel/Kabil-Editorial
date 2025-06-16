@@ -198,6 +198,10 @@
     gap: 20px;
 }
 
+.botones a button{
+    font-size: 20px;
+}
+
 button:hover{
     background: white;
     color: #738dcc;
