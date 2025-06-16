@@ -71,3 +71,9 @@
     background-position: center;
 }
 
+.ficha:nth-child(4){
+    background: url(../img/fotos/foto4.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
