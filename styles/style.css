@@ -391,7 +391,7 @@ body{
 }
 
 .productos .datos{
-    width: 450px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -424,6 +424,7 @@ body{
     border-radius: 20px;
     margin-top: 10px;
     font-family: 'Glory', sans-serif;
+    text-align: justify;
 }
 
 /* .productos h1{
