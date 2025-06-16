@@ -75,6 +75,7 @@ body{
     font-size: 40px;
     color: #171d2a;
     text-align: center;
+    animation: bounceInUp 1.5s ease forwards 1.5s, fade 3s;
 }
   
 .logo img {
@@ -96,6 +97,13 @@ body{
     font-size: 20px;
     font-family: 'Glory', sans-serif;
     font-weight: 500;
+}
+
+.logo h1{
+    font-size: 72px;
+    z-index: 1;
+    animation: zoomInUp;
+    animation-duration: 2s;
 }
 
 .primero, .segundo {
@@ -728,5 +736,17 @@ body{
     }
     100%{
         background-position: 0 50%;
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0%;
+    }
+    51%{
+        opacity: 100%;
     }
 }

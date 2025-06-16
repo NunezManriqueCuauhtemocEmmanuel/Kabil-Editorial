@@ -65,5 +65,10 @@ const main = document.querySelector('main');
     i++;
   }, 5000);
 
+const elemento = document.querySelector('.mi-elemento');
 
+setTimeout(() => {
+  elemento.classList.remove('oculto');
+  elemento.classList.add('animate__animated', 'animate__fadeIn', 'animate__delay-1s');
+}, 2000);
     

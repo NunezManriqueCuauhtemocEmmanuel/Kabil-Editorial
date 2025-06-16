@@ -1,114 +1,6 @@
-*{
-    font-family: 'Glory', serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
-body{ 
-    background: #EAECEE;
-
-}
-
-.titulo {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-  z-index: 0;
-}
-
-.fondo1 {
-  background-image: url('../img/fondos/fondo1.png');
-}
-
-.fondo2 {
-  background-image: url('../img/fondos/fondo2.png');
-}
-
-.fondo3 {
-  background-image: url('../img/fondos/fondo3.png');
-}
-
-.fondo4 {
-  background-image: url('../img/fondos/fondo4.png');
-}
-
-.fondo5 {
-  background-image: url('../img/fondos/fondo5.png');
-}
-
-.fondo6 {
-  background-image: url('../img/fondos/fondo6.png');
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 40vh;
-    width: 70%;
-    gap: 30px;
-}
-
-.logo h3{
-    width: 70%;
-    z-index: 1;
-    font-size: 40px;
-    color: #171d2a;
-    text-align: center;
-}
-  
-.logo img {
-    width: 40%;
-    min-width: 300px;;
-    filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.35));
-    transition: all 0.5s;
-    z-index: 1;
-}
-
-.titulo .logo img:hover{
-    transform: scale(1.1);
-}
-
-.logo p{
-    width: 70%;
-    text-align: center;
-    z-index: 1;
-    font-size: 20px;
-    font-family: 'Glory', sans-serif;
-    font-weight: 500;
-}
-
-.primero, .segundo {
-    color: #6a51a4;
-    transition: 1s ease-in-out;
-}
-
-.visible {
-  opacity: 1;
-  z-index: 0;
-}
 
 .frase{
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,5 +71,17 @@ body{
 @media (max-width: 700px){
     .contain{
         width: 95%;
+    }
+}
+
+@keyframes back{
+    0%{
+        background: #b9a8d2;
+    }
+    16.6%{
+        background: #a0d9d7;
+    }
+    100%{
+        background: #b9a8d2;
     }
 }
