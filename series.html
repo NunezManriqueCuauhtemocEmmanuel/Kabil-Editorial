@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/ico/icono.ico" type="image/x-icon">
-    <script defer src="./scripts/script.js?v=2"></script>
-    <script defer src="./scripts/navbar.js?v=2"></script>
-    <link rel="stylesheet" href="./styles/style.css?v=2">
-    <link rel="stylesheet" href="./styles/productos.css?v=2">
-    <link rel="stylesheet" href="./styles/navbar.css?v=2">
-    <link rel="stylesheet" href="./styles/animaciones.css?v=2">
-    <link rel="stylesheet" href="./styles/libro.css?v=2">
-    <link rel="stylesheet" href="./styles/footer.css?v=2">
-    <script defer src="./scripts/animaciones.js?v=2"></script>
+    <script defer src="./scripts/script.js?v=3"></script>
+    <script defer src="./scripts/navbar.js?v=3"></script>
+    <link rel="stylesheet" href="./styles/style.css?v=3">
+    <link rel="stylesheet" href="./styles/navbar.css?v=3">
+    <link rel="stylesheet" href="./styles/productos.css?v=3">
+    <link rel="stylesheet" href="./styles/animaciones.css?v=3">
+    <link rel="stylesheet" href="./styles/libro.css?v=3">
+    <link rel="stylesheet" href="./styles/footer.css?v=3">
+    <script defer src="./scripts/animaciones.js?v=3"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -22,6 +22,20 @@
     <title>Kabil Seies</title>
 </head>
 <body>
+    <!-- <nav class="navbar" id="navbar">
+        
+        <div class="navbar__link">
+            <li><a href="loader.html?next=./index.html"> Nosotros</a></li>
+            <li><a href="loader.html?next=./series.html" class="active">Series</a></li>
+            <li><a href="loader.html?next=./autores.html">Autores</a></li>
+        </div>
+
+        <div class="data">
+            <div class="fecha" id="date-container"></div>
+            <div id="ico-container" class="ico"></div>
+            <div id="time-container" class="time"></div>
+        </div>
+    </nav> -->
     <header>
         <a href="#" class="logoK"><img src="./img/kabil.png" alt=""></a>
 
@@ -91,67 +105,78 @@
         <h1> Nuestra serie</h1>
         <p> Al pasar el puntero o dando un toque sobre el libro, podras acceder a contenido de nuestra serie</p>
         <div class="maincontainer aparecer">
+            
+            <div class="contenedor_precio">
+                <h2>Precio: $280.00 MXN c/u</h2>
+                <div class="seccion__precio">
+                    <div class="contenedorC">
+                        <div class="thecard">
+                            <div class="thefront clase1"></div>
+                            <div class="theback clase1b"></div>
+                        </div>
+                        <div class="botones">
+                            <a href="https://heyzine.com/flip-book/1544a93b9b.html"><button >Samples</button></a>
+                            <a href="https://heyzine.com/flip-book/587758da2e.html"><button >Solucionario</button></a>
+                        </div>
+                    </div>
 
-            <div class="contenedorC">
-                <div class="thecard">
-                    <div class="thefront clase1"></div>
-                    <div class="theback clase1b"></div>
-                </div>
-                <div class="botones">
-                    <a href="https://heyzine.com/flip-book/1544a93b9b.html"><button >Samples</button></a>
-                    <a href="https://heyzine.com/flip-book/587758da2e.html"><button >Solucionario</button></a>
-                </div>
-            </div>
+                    <div class="contenedorC">
+                        <div class="thecard">
+                            <div class="thefront clase2"></div>
+                            <div class="theback clase2b"></div>
+                        </div>
+                        <div class="botones">
+                            <a href="https://heyzine.com/flip-book/7eb579e716.html"><button >Samples</button></a>
+                            <a href="https://heyzine.com/flip-book/7df444d6f3.html"><button >Solucionario</button></a>
+                        </div>
+                    </div>
 
-            <div class="contenedorC">
-                <div class="thecard">
-                    <div class="thefront clase2"></div>
-                    <div class="theback clase2b"></div>
-                </div>
-                <div class="botones">
-                    <a href="https://heyzine.com/flip-book/7eb579e716.html"><button >Samples</button></a>
-                    <a href="https://heyzine.com/flip-book/7df444d6f3.html"><button >Solucionario</button></a>
-                </div>
-            </div>
-
-            <div class="contenedorC">
-                <div class="thecard">  
-                    <div class="thefront clase3"></div>
-                    <div class="theback clase3b"></div>
-                </div>
-                <div class="botones">
-                    <a href="https://heyzine.com/flip-book/ad4e788372.html"><button >Samples</button></a>
-                    <a href="https://heyzine.com/flip-book/47d3040181.html"><button >Solucionario</button></a>
+                    <div class="contenedorC">
+                        <div class="thecard">  
+                            <div class="thefront clase3"></div>
+                            <div class="theback clase3b"></div>
+                        </div>
+                        <div class="botones">
+                            <a href="https://heyzine.com/flip-book/ad4e788372.html"><button >Samples</button></a>
+                            <a href="https://heyzine.com/flip-book/47d3040181.html"><button >Solucionario</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="contenedorC">
-                <div class="thecard">
-                    <div class="thefront clase4"></div>              
-                    <div class="theback clase4b"></div>
-            </div>
-                <div class="botones">
-                    <a href="https://heyzine.com/flip-book/d8ea31560a.html"><button >Samples</button></a>
-                    <a href="https://heyzine.com/flip-book/604256e3b2.html"><button >Solucionario</button></a>
-                </div>
-            </div>
-            <div class="contenedorC">
-                <div class="thecard">
-                    <div class="thefront clase5"></div>
-                    <div class="theback clase5b"></div>
-                </div>
-                <div class="botones">
-                    <a href="https://heyzine.com/flip-book/cdbe3d14d9.html"><button >Samples</button></a>
-                    <a href="https://heyzine.com/flip-book/1eb24c64a8.html"><button >Solucionario</button></a>
-                </div>
-            </div>
-            <div class="contenedorC">
-                <div class="thecard">
-                    <div class="thefront clase6"></div>
-                    <div class="theback clase6b"></div>
-                </div>
-                <div class="botones">
-                    <a href="https://heyzine.com/flip-book/1dddf87df4.html"><button >Samples</button></a>
-                    <a href="https://heyzine.com/flip-book/4131b4679d.html"><button >Solucionario</button></a>
+           
+            <div class="contenedor_precio">
+                 <h2>Precio: $260.00 MXN c/u</h2>
+                <div class="seccion__precio">
+                    <div class="contenedorC">
+                        <div class="thecard">
+                            <div class="thefront clase4"></div>              
+                            <div class="theback clase4b"></div>
+                    </div>
+                        <div class="botones">
+                            <a href="https://heyzine.com/flip-book/d8ea31560a.html"><button >Samples</button></a>
+                            <a href="https://heyzine.com/flip-book/604256e3b2.html"><button >Solucionario</button></a>
+                        </div>
+                    </div>
+                    <div class="contenedorC">
+                        <div class="thecard">
+                            <div class="thefront clase5"></div>
+                            <div class="theback clase5b"></div>
+                        </div>
+                        <div class="botones">
+                            <a href="https://heyzine.com/flip-book/cdbe3d14d9.html"><button >Samples</button></a>
+                            <a href="https://heyzine.com/flip-book/1eb24c64a8.html"><button >Solucionario</button></a>
+                        </div>
+                    </div>
+                    <div class="contenedorC">
+                        <div class="thecard">
+                            <div class="thefront clase6"></div>
+                            <div class="theback clase6b"></div>
+                        </div>
+                        <div class="botones">
+                            <a href="https://heyzine.com/flip-book/1dddf87df4.html"><button >Samples</button></a>
+                            <a href="https://heyzine.com/flip-book/4131b4679d.html"><button >Solucionario</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
